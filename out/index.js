@@ -54,13 +54,13 @@ function perguntarOutraOperacao() {
             iniciar();
         }
         else {
-            console.log('Encerrando a calculadora...');
+            console.log('Calculadora encerrada.');
             leitor.close();
         }
     });
 }
 function iniciar() {
-    leitor.question("Digite os n\u00FAmeros e a opera\u00E7\u00E3o desejada:\n        - Opera\u00E7\u00F5es b\u00E1sicas: para realizar, insira dois n\u00FAmeros e a opera\u00E7\u00E3o.\n        - Bhaskara: para realizar, insira tr\u00EAs n\u00FAmeros e bhaskara\n        - Encerrar: Sair\n", function (valor) {
+    leitor.question("Digite os n\u00FAmeros e a opera\u00E7\u00E3o desejada:\n        - Opera\u00E7\u00F5es b\u00E1sicas: para realizar, insira dois n\u00FAmeros e a opera\u00E7\u00E3o.\n        - Bhaskara: para realizar, insira tr\u00EAs n\u00FAmeros e \"Bhaskara\".\n        - Encerrar: \"Sair\".\n", function (valor) {
         if (valor.toLowerCase() === 'sair') {
             console.log('Calculadora encerrada.');
             leitor.close();
